@@ -1,3 +1,2 @@
 # umap-presentation
-UMAP.pptx: Power Point presentation
-umap.R: R code example
+Power Point presentation (UMAP.pptx) and an R code example (umap.R).
