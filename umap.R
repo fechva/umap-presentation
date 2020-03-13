@@ -8,7 +8,7 @@ data <- as.matrix( iris[, c(1:4)] )
 seq.umap <- umap::umap(
   d            = data,
   method       = "umap-learn",
-  metric       = "canberra",
+  metric       = "euclidean",
   n_neighbors  = 15,
   min_dist     = 0.1,
   n_components = 2)
@@ -20,6 +20,7 @@ ggplot(data    = umap_coordinates,
   geom_point(alpha = 0.4, size = 3) + 
   theme_bw()
 
+# https://umap-learn.readthedocs.io/en/latest/parameters.html#metric
 # Minkowski style metrics
 # 
 # euclidean
